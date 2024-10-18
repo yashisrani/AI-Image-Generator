@@ -17,7 +17,7 @@ const App = () => {
         { inputs: prompt },
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${import.meta.env.API_KEY}`,
             'Content-Type': 'application/json',
           },
           responseType: 'blob', // Set responseType to 'blob' for image response
