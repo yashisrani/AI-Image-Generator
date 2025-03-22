@@ -1,12 +1,77 @@
-# React + Vite
+# AI Image Generator 🤖🪄
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application that generates unique images from text prompts using the Hugging Face Text-to-Image API. Built with React and styled using Tailwind CSS, this tool provides an intuitive interface for users to explore AI-generated visuals.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these instructions to set up and run the project on your local machine for development and testing purposes.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The things you need before installing the software.
+
+* Node.js (v18 or above)
+* npm or yarn
+* Hugging Face API Key with access to a Text-to-Image model
+
+
+### Installation
+
+A step by step guide that will tell you how to get the development environment up and running.
+
+1. Clone the Repositry:
+2. 
+   ```
+   git clone https://github.com/yashisrani/AI-Image-Generator
+   cd AI-Image-Generator
+   ```
+3. Install dependencies:
+   
+   ```
+   npm install
+   ```
+4. Configure environment variables:
+
+- Create a .env file in the root directory and add your Hugging Face API key.
+- Make sure the variable name starts with VITE_ (required for Vite).
+  
+  ```
+  VITE_API_KEY=your_huggingface_api_key
+  ```
+4. Run the development server:
+   
+   ```
+   npm run dev
+   ```
+
+## Usage
+
+1. Enter a description or prompt in the text box.
+\
+2. Click the "Generate Image" button.
+
+3. The app will display an AI-generated image based on your prompt.
+
+4. If no prompt is entered, the button will remain disabled.
+
+## Deployment
+
+If you wish to deploy the project, here are some additional notes:
+
+### Server Environments
+- Live: Production deployment (e.g., Vercel, Netlify)
+
+- Release: Staging or test environments
+
+- Development: Local environment using npm run dev
+
+- Deployment Steps (Example with Vercel)
+= Push your code to GitHub/GitLab/Bitbucket.
+
+- Import your repository in Vercel.
+
+- Add your VITE_API_KEY in the project settings → Environment Variables.
+
+- Deploy!
+
+
